@@ -6,7 +6,6 @@ import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import org.apache.tomcat.util.http.parser.Authorization;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +19,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
 @Component
-public class JWTAuthenticationFilter extends OncePerRequestFilter
+public class JWTAuthenticationFilter extends OncePerRequestFilter  //it is use  when the request is comes  from the client side
 {
     private Logger logger = LoggerFactory.getLogger(OncePerRequestFilter.class);
     @Autowired

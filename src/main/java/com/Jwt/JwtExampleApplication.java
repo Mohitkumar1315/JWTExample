@@ -7,7 +7,6 @@ public class JwtExampleApplication
 	public static void main(String[] args)
 	{
 		SpringApplication.run(JwtExampleApplication.class, args);
-
 	}
 }
 
