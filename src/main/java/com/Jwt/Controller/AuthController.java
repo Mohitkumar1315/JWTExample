@@ -43,7 +43,7 @@ public class AuthController
     {
         UsernamePasswordAuthenticationToken authentication=new UsernamePasswordAuthenticationToken(mail,password);
         try {
-                authenticationManager.authenticate(authentication);
+            authenticationManager.authenticate(authentication);
         }
         catch (BadCredentialsException e){
             throw  new BadCredentialsException("Invalid username and Password");
